@@ -115,6 +115,13 @@ map <Right> :echo "no!"<cr>
 map <Up>    :echo "no!"<cr>
 map <Down>  :echo "no!"<cr>
 
+" Y should behave like D and C
+nmap Y y$
+
+" :W saves just like :w
+" http://stackoverflow.com/questions/3878692/aliasing-a-command-in-vim
+cnoreabbrev W w
+
 set backupdir=~/.vim/_backup    " where to put backup files.
 set directory=~/.vim/_temp      " where to put swap files.
 
